@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    font-family: Goudy Old Style, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFC19E; /* Background color set to the lightest color from the palette */
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #C16E45; /* Using color #C16E45 for the header background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Introduction section */
+.intro {
+    margin-bottom: 20px;
+}
+
+/* Button */
+.browse-button {
+    background-color: #F78F4E; /* Using color #F78F4E for the browse button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.browse-button:hover {
+    background-color: #FF9E65; /* Using color #FF9E65 for the hover effect on the browse button */
+}
+
+/* Actions section */
+.actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Action buttons */
+.action-button {
+    background-color: #F78F4E; /* Using color #F78F4E for the action buttons */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #B6775C; /* Using color #B6775C for the hover effect on the action buttons */
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Login section */
+.login-section {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Login form */
+.login-form {
+    max-width: 300px; /* Restrict the width of the form */
+    margin: auto;
+}
+
+.login-form h2 {
+    color: #C16E45; /* Dark red color */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B6775C; /* Brownish color */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #F78F4E; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #FF9E65; /* Lighter orange color */
+}
+
+/* Image section */
+.image-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFC19E; /* Lightest color in the palette */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%; /* Adjust to fit within the container */
+}
