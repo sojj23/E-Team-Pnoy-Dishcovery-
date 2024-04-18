@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Register - Pnoy Dishcovery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="pics/logo.png" class="logo" alt="Pnoy Dishcovery Logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <h2>Register</h2>
+        <form action="/api/register" method="POST" class="register-form">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input
+              type="text"
+              required
+              placeholder="Full Name"
+              name="fullname"
+            />
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required placeholder="Email" name="email" />
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input
+              type="password"
+              required
+              placeholder="Password"
+              name="password"
+            />
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input
+              type="password"
+              required
+              placeholder="Confirm Password"
+              name="confirm_password"
+            />
+          </div>
+          <!-- Register button within the form -->
+          <button type="submit" class="register-button">
+            <span></span>
+            Register
+          </button>
+        </form>
+        <div class="login">
+          <p>
+            Already have an account?
+            <a href="login.html" class="login-link">Log in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Include Ionicons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
