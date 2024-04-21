@@ -1,0 +1,198 @@
+/* Color scheme */
+:root {
+    --primary-color: #A5705E; /* Primary color */
+    --white-color: #ffffff; /* White */
+    --dark-color: #333333; /* Dark gray */
+}
+
+/* Reset default margin and set global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Goudy Old Style', serif;
+}
+
+/* Body styles to remove scroll */
+body {
+    overflow: hidden;
+}
+
+/* Banner styles */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url(pics/bg1.png) center center/cover;
+    color: var(--white-color);
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Content styles */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--white-color);
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+/* Button styles */
+button,
+.login-button,
+.register-button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--white-color);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span,
+.login-button span,
+.register-button span {
+    background: var(--primary-color);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+button:hover span,
+.login-button:hover span,
+.register-button:hover span {
+    width: 100%;
+}
+
+button:hover,
+.login-button:hover,
+.register-button:hover {
+    border: none;
+    color: var(--white-color);
+}
+
+/* Form styling */
+.login-form,
+.register-form {
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Input box styling */
+.input-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.input-box input {
+    flex-grow: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: var(--white-color);
+    font-size: 16px;
+    outline: none;
+    margin-left: 10px;
+    transition: border-bottom-color 0.3s;
+}
+
+.input-box input:focus {
+    border-bottom-color: var(--primary-color);
+}
+
+.input-box .icon {
+    color: var(--primary-color);
+}
+
+/* Link styling */
+.register-link,
+.forgot-password-link,
+.login-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.register-link:hover,
+.forgot-password-link:hover,
+.login-link:hover {
+    text-decoration: underline;
+}
